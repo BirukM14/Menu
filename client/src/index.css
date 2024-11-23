@@ -1,0 +1,342 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.header {
+  background-color: #f8f9fa; /* Light background color */
+  color: #333; /* Dark text color */
+  padding: 40px; /* Add some space around the content */
+  text-align: center; /* Center the text */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin: 20px auto; /* Add margin to center the content */
+  width: 80%; /* Set the width of the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Style for the h2 heading inside the header */
+.header h2 {
+  font-size: 2rem; /* Larger font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #2c3e50; /* Slightly darker text color for heading */
+}
+
+/* Style for the paragraph inside the header */
+.header p {
+  font-size: 1rem; /* Set font size for paragraph */
+  line-height: 1.6; /* Increase line height for readability */
+  color: #555; /* Slightly lighter text color for paragraph */
+  max-width: 800px; /* Limit the width for readability */
+  margin: 0 auto; /* Center the paragraph */
+}
+.cart {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.foodmenu {
+  font-family: 'Arial', sans-serif; /* Clean font style */
+  background-color: #e93d3d; /* Light background color */
+  padding: 30px; /* Add space inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 900px; /* Limit the width of the menu */
+  margin: 20px auto; /* Center the menu on the page */
+}
+
+.foodmenu h2 {
+  font-size: 2.5rem; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.foodmenu ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.foodmenu li {
+  background-color: white; 
+  margin-bottom: 20px; 
+  padding: 20px; 
+  border-radius: 50px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.foodmenu li h3 {
+  font-size: 1.8rem; 
+  color: #08b450; 
+  margin: 0; 
+}
+
+.foodmenu li p {
+  font-size: 1rem; 
+  color: #666666; 
+  margin: 5px 0; 
+}
+
+.foodmenu li h3:nth-of-type(2) {
+  font-size: 1.2rem; 
+  color: green; 
+}
+
+.foodmenu li p:nth-of-type(3) {
+  font-size: 1.1rem; 
+  color: #333; 
+}
+
+
+
+.foodmenu li p.category {
+  font-style: italic; 
+  color: #888; 
+}
+
+
+button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+.link{
+  color: #45a049;
+
+}
+
+.navbar {
+  background-color: #aa2929;
+  color: #0ed651;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+  margin-bottom: 20px ;
+}
+
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar .nav-links {
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff5722; /* Accent color on hover */
+}
+
+  .navbar .nav-links li {
+      width: 100%;
+      text-align: left;
+      margin: 10px 0;
+  }
+
+  .navbar .menu-icon {
+      display: block;
+  }
+
+  .navbar .nav-links a {
+      padding: 10px;
+      text-align: center;
+  }
+
+.navbar .nav-links.active li {
+  background-color: #444;
+}
+
+
+.register {
+  max-width: 400px; 
+  margin: 0 auto;   
+  padding: 20px;
+  background-color: #f4f4f9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.register label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.register input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.register input[type="email"],
+.register input[type="password"],
+.register input[type="text"] {
+  font-family: Arial, sans-serif;
+}
+
+
+.register button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+
+.register .error {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .register {
+    padding: 15px;
+  }
+
+  .register input,
+  .register button {
+    font-size: 14px;
+  }
+}
+.register h2{
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.login {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  margin-left: 400px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.login p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #5b9bd5;
+  outline: none;
+}
+
+.login button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+.login a {
+  text-decoration: none;
+  color: #5b9bd5;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+.login footer {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}
