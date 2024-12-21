@@ -7,11 +7,11 @@ const FoodList = () => {
   const [foods, setFoods] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const {addToCart} = useCart();
+  const { addToCart } = useCart();
 
-  const fetchFoods = async()=>{
+  const fetchFoods = async() => {
     try {
-      const response = await api.get('api/products'); 
+      const response = await api.get('api/products');
       setFoods(response.data);
       console.log("response", response.data);
     } catch (error) {
@@ -20,7 +20,7 @@ const FoodList = () => {
       setLoading(false);
     }
   }
-  // Fetch food items from the backend
+
   useEffect(() => {
     fetchFoods();
   }, []);
@@ -35,14 +35,15 @@ const FoodList = () => {
       <h2>Food Menu</h2>
       <ul>
         {foods.map((food) => (
-          <li key={food.id}>
+          // Ensure that the `key` prop is unique, using `food.id` if it's available
+          <li key={food._id}> 
             <h3>{food.name}</h3>
             <p>{food.description}</p>
             <p>${food.price && !isNaN(food.price) ? food.price.toFixed(2) : 'N/A'}</p>
             <p>{food.category}</p>
             <p>{food.image}</p>
             <h3>{food.available}</h3>
-            <button onClick={() => addToCart(food)}>add</button>
+            <button onClick={() => addToCart(food)}>Add</button>
           </li>
         ))}
       </ul>
